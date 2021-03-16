@@ -1,0 +1,25 @@
+{
+    "id": "507D1797",
+    "path": "~/production_pilot/analysis_single_participant.Rmd",
+    "project_path": "analysis_single_participant.Rmd",
+    "type": "r_markdown",
+    "hash": "2735193565",
+    "contents": "",
+    "dirty": false,
+    "created": 1615917056948.0,
+    "source_on_save": false,
+    "relative_order": 17,
+    "properties": {
+        "tempName": "Untitled2",
+        "cursorPosition": "50,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1615763517,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615763517,
+    "read_only": false,
+    "read_only_alternatives": []
+}

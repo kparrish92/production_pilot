@@ -1,0 +1,26 @@
+{
+    "id": "2170BFA4",
+    "path": "~/production_pilot/01tidy.R",
+    "project_path": "01tidy.R",
+    "type": "r_source",
+    "hash": "258174458",
+    "contents": "",
+    "dirty": false,
+    "created": 1615757346398.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled4",
+        "cursorPosition": "185,0",
+        "scrollLine": "175",
+        "notebook_format": "html_document"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1615917360,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615917360303,
+    "read_only": false,
+    "read_only_alternatives": []
+}

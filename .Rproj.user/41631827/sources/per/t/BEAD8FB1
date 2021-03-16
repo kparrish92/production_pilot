@@ -1,0 +1,32 @@
+{
+    "id": "BEAD8FB1",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615825942840.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "expression": "all_tidy",
+        "caption": "all_tidy",
+        "totalObservations": "24",
+        "displayedObservations": "24",
+        "variables": "7",
+        "cacheKey": "5499E7A6",
+        "object": "all_tidy",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=all_tidy&cache_key=5499E7A6&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2475945353584,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615825942840,
+    "read_only": false,
+    "read_only_alternatives": []
+}

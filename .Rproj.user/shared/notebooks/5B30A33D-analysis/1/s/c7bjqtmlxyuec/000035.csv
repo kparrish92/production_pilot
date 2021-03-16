@@ -1,8 +1,0 @@
-"0",""
-"0","all %>% "
-"0","  select(language, vot) %>% "
-"0","  pivot_wider(names_from = language, values_from = vot)"
-"2","Values are not uniquely identified; output will contain list-cols.
-* Use `values_fn = list` to suppress this warning.
-* Use `values_fn = length` to identify where the duplicates arise
-* Use `values_fn = {summary_fun}` to summarise duplicates"

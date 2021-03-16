@@ -1,0 +1,32 @@
+{
+    "id": "9D37DD8E",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615829127223.0,
+    "source_on_save": false,
+    "relative_order": 8,
+    "properties": {
+        "expression": "all_tidy_z",
+        "caption": "all_tidy_z",
+        "totalObservations": "72",
+        "displayedObservations": "72",
+        "variables": "5",
+        "cacheKey": "9C6AF767",
+        "object": "all_tidy_z",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=all_tidy_z&cache_key=9C6AF767&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2475797225480,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615829127223,
+    "read_only": false,
+    "read_only_alternatives": []
+}
