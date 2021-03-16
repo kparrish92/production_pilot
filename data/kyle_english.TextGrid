@@ -1,0 +1,196 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 19.309791666666666 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 19.309791666666666 
+        intervals: size = 23 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.8908958333333322 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.8908958333333322 
+            xmax = 1.1548958333333323 
+            text = "word" 
+        intervals [3]:
+            xmin = 1.1548958333333323 
+            xmax = 1.3148958333333323 
+            text = "silent" 
+        intervals [4]:
+            xmin = 1.3148958333333323 
+            xmax = 1.4828958333333322 
+            text = "word" 
+        intervals [5]:
+            xmin = 1.4828958333333322 
+            xmax = 2.6028958333333323 
+            text = "silent" 
+        intervals [6]:
+            xmin = 2.6028958333333323 
+            xmax = 2.970895833333332 
+            text = "word" 
+        intervals [7]:
+            xmin = 2.970895833333332 
+            xmax = 4.922895833333332 
+            text = "silent" 
+        intervals [8]:
+            xmin = 4.922895833333332 
+            xmax = 5.090895833333333 
+            text = "word" 
+        intervals [9]:
+            xmin = 5.090895833333333 
+            xmax = 6.7308958333333315 
+            text = "silent" 
+        intervals [10]:
+            xmin = 6.7308958333333315 
+            xmax = 7.114895833333332 
+            text = "word" 
+        intervals [11]:
+            xmin = 7.114895833333332 
+            xmax = 8.538895833333331 
+            text = "silent" 
+        intervals [12]:
+            xmin = 8.538895833333331 
+            xmax = 8.898895833333333 
+            text = "word" 
+        intervals [13]:
+            xmin = 8.898895833333333 
+            xmax = 10.538895833333331 
+            text = "silent" 
+        intervals [14]:
+            xmin = 10.538895833333331 
+            xmax = 10.922895833333332 
+            text = "word" 
+        intervals [15]:
+            xmin = 10.922895833333332 
+            xmax = 12.162895833333332 
+            text = "silent" 
+        intervals [16]:
+            xmin = 12.162895833333332 
+            xmax = 12.794895833333332 
+            text = "word" 
+        intervals [17]:
+            xmin = 12.794895833333332 
+            xmax = 14.306895833333332 
+            text = "silent" 
+        intervals [18]:
+            xmin = 14.306895833333332 
+            xmax = 14.642895833333332 
+            text = "word" 
+        intervals [19]:
+            xmin = 14.642895833333332 
+            xmax = 16.242895833333336 
+            text = "silent" 
+        intervals [20]:
+            xmin = 16.242895833333336 
+            xmax = 16.594895833333332 
+            text = "word" 
+        intervals [21]:
+            xmin = 16.594895833333332 
+            xmax = 18.066895833333334 
+            text = "silent" 
+        intervals [22]:
+            xmin = 18.066895833333334 
+            xmax = 18.426895833333333 
+            text = "word" 
+        intervals [23]:
+            xmin = 18.426895833333333 
+            xmax = 19.309791666666666 
+            text = "silent" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "vot" 
+        xmin = 0 
+        xmax = 19.309791666666666 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.8843149699312703 
+            text = "" 
+        intervals [2]:
+            xmin = 0.8843149699312703 
+            xmax = 0.9235095575601364 
+            text = "vot" 
+        intervals [3]:
+            xmin = 0.9235095575601364 
+            xmax = 2.591120847651774 
+            text = "" 
+        intervals [4]:
+            xmin = 2.591120847651774 
+            xmax = 2.6769756586483378 
+            text = "vot" 
+        intervals [5]:
+            xmin = 2.6769756586483378 
+            xmax = 4.918882910230055 
+            text = "" 
+        intervals [6]:
+            xmin = 4.918882910230055 
+            xmax = 4.968383985577813 
+            text = "vot" 
+        intervals [7]:
+            xmin = 4.968383985577813 
+            xmax = 6.731873408570899 
+            text = "" 
+        intervals [8]:
+            xmin = 6.731873408570899 
+            xmax = 6.791793265382896 
+            text = "vot" 
+        intervals [9]:
+            xmin = 6.791793265382896 
+            xmax = 8.537294628499307 
+            text = "" 
+        intervals [10]:
+            xmin = 8.537294628499307 
+            xmax = 8.603548367655442 
+            text = "vot" 
+        intervals [11]:
+            xmin = 8.603548367655442 
+            xmax = 10.53688743195762 
+            text = "" 
+        intervals [12]:
+            xmin = 10.53688743195762 
+            xmax = 10.58847888658339 
+            text = "vot" 
+        intervals [13]:
+            xmin = 10.58847888658339 
+            xmax = 12.166190843938276 
+            text = "" 
+        intervals [14]:
+            xmin = 12.166190843938276 
+            xmax = 12.219997021099841 
+            text = "vot" 
+        intervals [15]:
+            xmin = 12.219997021099841 
+            xmax = 14.25359591681997 
+            text = "" 
+        intervals [16]:
+            xmin = 14.25359591681997 
+            xmax = 14.31874182111106 
+            text = "vot" 
+        intervals [17]:
+            xmin = 14.31874182111106 
+            xmax = 16.24096371750419 
+            text = "" 
+        intervals [18]:
+            xmin = 16.24096371750419 
+            xmax = 16.295951386539162 
+            text = "vot" 
+        intervals [19]:
+            xmin = 16.295951386539162 
+            xmax = 18.06505571777446 
+            text = "" 
+        intervals [20]:
+            xmin = 18.06505571777446 
+            xmax = 18.117786652971894 
+            text = "vot" 
+        intervals [21]:
+            xmin = 18.117786652971894 
+            xmax = 19.309791666666666 
+            text = "" 

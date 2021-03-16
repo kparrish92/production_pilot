@@ -1,0 +1,99 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 27.229791666666667 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "vot" 
+        xmin = 0 
+        xmax = 27.229791666666667 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.888024995324678 
+            text = "" 
+        intervals [2]:
+            xmin = 0.888024995324678 
+            xmax = 0.9843192640989102 
+            text = "es01" 
+        intervals [3]:
+            xmin = 0.9843192640989102 
+            xmax = 4.154505290781508 
+            text = "" 
+        intervals [4]:
+            xmin = 4.154505290781508 
+            xmax = 4.2548851938687875 
+            text = "es01" 
+        intervals [5]:
+            xmin = 4.2548851938687875 
+            xmax = 6.762454833753401 
+            text = " " 
+        intervals [6]:
+            xmin = 6.762454833753401 
+            xmax = 6.826209032892488 
+            text = "es01" 
+        intervals [7]:
+            xmin = 6.826209032892488 
+            xmax = 9.291166325914828 
+            text = "" 
+        intervals [8]:
+            xmin = 9.291166325914828 
+            xmax = 9.363274679104498 
+            text = "es01" 
+        intervals [9]:
+            xmin = 9.363274679104498 
+            xmax = 11.999782389334145 
+            text = " " 
+        intervals [10]:
+            xmin = 11.999782389334145 
+            xmax = 12.076578106287206 
+            text = "es01
+" 
+        intervals [11]:
+            xmin = 12.076578106287206 
+            xmax = 14.89182764043379 
+            text = "" 
+        intervals [12]:
+            xmin = 14.89182764043379 
+            xmax = 14.986527895605853 
+            text = "es01" 
+        intervals [13]:
+            xmin = 14.986527895605853 
+            xmax = 17.343533855411813 
+            text = "" 
+        intervals [14]:
+            xmin = 17.343533855411813 
+            xmax = 17.42867882333284 
+            text = "es01" 
+        intervals [15]:
+            xmin = 17.42867882333284 
+            xmax = 20.216331276658345 
+            text = "" 
+        intervals [16]:
+            xmin = 20.216331276658345 
+            xmax = 20.3349163821008 
+            text = "es01" 
+        intervals [17]:
+            xmin = 20.3349163821008 
+            xmax = 22.55945199770827 
+            text = "" 
+        intervals [18]:
+            xmin = 22.55945199770827 
+            xmax = 22.71000713226 
+            text = "es01" 
+        intervals [19]:
+            xmin = 22.71000713226 
+            xmax = 25.301775820374026 
+            text = "" 
+        intervals [20]:
+            xmin = 25.301775820374026 
+            xmax = 25.390368171799334 
+            text = "es01" 
+        intervals [21]:
+            xmin = 25.390368171799334 
+            xmax = 27.229791666666667 
+            text = "" 

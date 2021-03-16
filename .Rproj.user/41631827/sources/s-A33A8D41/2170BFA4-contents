@@ -1,0 +1,198 @@
+library(here)
+library(fs)
+library(data.table)
+library(dplyr)
+library(tidyverse)
+library(equivalence)
+library(dplyr)
+
+list_of_files <- list.files(path = "raw_data/se_wav_files/tables", recursive = TRUE,
+                           pattern = "\\.Table$", 
+      
+                                                full.names = TRUE)
+all_se <- rbindlist(sapply(list_of_files, fread, simplify = FALSE),
+                use.names = TRUE, idcol = "FileName") 
+
+all_se = all_se %>% 
+  mutate(vot = tmax - tmin) %>% 
+  separate(text, into = c("participant", "language", "word"), sep = "_") %>%
+  group_by(participant, language) %>% 
+  mutate(mean = mean(vot), sd = sd(vot)) 
+
+
+## Language categories by participant: box plot
+
+all_se %>% 
+  ggplot(., aes(x = language, y = vot, color = participant)) + geom_boxplot()
+
+## VOTs of all three languages by participant: box plot 
+
+all_se %>% 
+  ggplot(., aes(x = participant, y = vot, color = language)) + geom_boxplot()
+
+## Group level box plots by language 
+
+all_se %>% 
+  ggplot(., aes(x = language, y = vot)) + geom_boxplot()
+
+
+desc_se = all_se %>% 
+  group_by(participant, language) %>% 
+  summarise(vot = mean(vot)) %>% 
+  pivot_wider(names_from = language, values_from = vot)
+
+# Plot L2 vs L3 mean VOTS by participant 
+
+desc_se %>% 
+  ggplot(., aes(x = spanish, y = french)) + geom_point() + geom_smooth(method = "lm")
+
+
+desc_se %>% 
+  ggplot(., aes(x = english, y = french)) + geom_point() + geom_smooth(method = "lm", fullrange = TRUE) +
+  xlim(0, .1) + ylim(0, .1)
+
+# model - predicting French VOT given English and Spanish VOT with means 
+
+model = lm(french ~ english + spanish, data = desc_se)
+
+# Tidy for t.tests
+
+all_french = all_se %>% 
+  filter(language == "french")
+
+all_spanish = all_se %>% 
+  filter(language == "spanish")
+
+all_english = all_se %>% 
+  filter(language == "english")
+
+# T test on group data to see whether English and Spanish are significantly different at the group level p = <.05 
+
+t.test(all_english$vot, all_spanish$vot)
+
+# T test on English and French, p = .469
+
+t.test(all_english$vot, all_french$vot)
+
+# T test on Spanish and French
+
+t.test(all_spanish$vot, all_french$vot)
+
+
+
+## Looking at running a model for all initial syllables types to look at more data points instead of just the mean
+
+# tidy french
+
+french_pa = all_french %>%
+  filter(word == "patte" | word == "pas") %>% 
+  group_by(participant) %>% 
+  summarise(french = mean(vot)) %>%  
+  mutate(syllable = "pa")
+
+french_pe = all_french %>%
+  filter(word == "peche" | word == "pere") %>% 
+  group_by(participant) %>% 
+  summarise(french = mean(vot)) %>%  
+  mutate(syllable = "pe")
+
+french_pi = all_french %>%
+  filter(word == "pile" | word == "pipe") %>% 
+  group_by(participant) %>% 
+  summarise(french = mean(vot)) %>%  
+  mutate(syllable = "pi")
+
+fren_syl = rbind(french_pa, french_pe, french_pi) %>% 
+  unite("participant", participant,syllable, remove = FALSE)
+
+# tidy spanish 
+
+spanish_pa = all_spanish %>%
+  filter(word == "pato") %>% 
+  group_by(participant) %>% 
+  summarise(spanish = mean(vot)) %>%  
+  mutate(syllable = "pa")
+
+spanish_pe = all_spanish %>%
+  filter(word == "pena" | word == "pelo") %>% 
+  group_by(participant) %>% 
+  summarise(spanish = mean(vot)) %>%  
+  mutate(syllable = "pe")
+
+spanish_pi = all_spanish %>%
+  filter(word == "pina" | word == "piso") %>% 
+  group_by(participant) %>% 
+  summarise(spanish = mean(vot)) %>%  
+  mutate(syllable = "pi")
+
+span_syl = rbind(spanish_pa, spanish_pe, spanish_pi) %>% 
+  unite("participant", participant,syllable, remove = FALSE)
+
+# tidy english 
+
+english_pa = all_english %>%
+  filter(word == "parrot") %>% 
+  group_by(participant) %>% 
+  summarise(english = mean(vot)) %>%  
+  mutate(syllable = "pa")
+
+english_pe = all_english %>%
+  filter(word == "pepper" | word == "penny") %>% 
+  group_by(participant) %>% 
+  summarise(english = mean(vot)) %>%  
+  mutate(syllable = "pe")
+
+english_pi = all_english %>%
+  filter(word == "pillow" | word == "pity") %>%
+  group_by(participant) %>% 
+  summarise(english = mean(vot)) %>%  
+  mutate(syllable = "pi")
+
+
+eng_syl = rbind(english_pa, english_pe, english_pi) %>% 
+  unite("participant", participant,syllable, remove = FALSE)
+
+all_tidy = fren_syl %>% 
+  left_join(., span_syl, by = "participant") %>% 
+  left_join(., eng_syl, by = "participant") 
+
+## Eye-ball tidy data
+
+all_tidy %>% 
+  ggplot(aes(x = english, y = french)) + geom_point() + geom_smooth(method = "lm")
+
+
+all_tidy %>% 
+  ggplot(aes(x = spanish, y = french)) + geom_point() + geom_smooth(method = "lm")
+
+
+## model for tidy data 
+
+model_tidy = lm(french ~ english + spanish, data = all_tidy)
+summary(model_tidy)
+
+## check assumptions 
+
+gvlma::gvlma(model_tidy)
+
+
+
+# paired t.test of tidy data 
+
+t.test(all_tidy$french, all_tidy$english, paired = TRUE)
+
+
+t.test(all_tidy$spanish, all_tidy$english, paired = TRUE)
+
+
+t.test(all_tidy$french, all_tidy$spanish, paired = TRUE)
+
+# TOST for all combinations
+
+tost(all_tidy$french, all_tidy$spanish, epsilon = 1, paired = TRUE)
+
+
+tost(all_tidy$english, all_tidy$spanish, epsilon = 1, paired = TRUE)
+
+
+tost(all_tidy$french, all_tidy$english, epsilon = 1, paired = TRUE)

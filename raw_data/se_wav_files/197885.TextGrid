@@ -1,0 +1,234 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 52.16154195011338 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "vot" 
+        xmin = 0 
+        xmax = 52.16154195011338 
+        intervals: size = 55 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.6493045233575523 
+            text = "" 
+        intervals [2]:
+            xmin = 0.6493045233575523 
+            xmax = 0.660212720546153 
+            text = "197885_french_pas" 
+        intervals [3]:
+            xmin = 0.660212720546153 
+            xmax = 2.169321413563295 
+            text = "" 
+        intervals [4]:
+            xmin = 2.169321413563295 
+            xmax = 2.1894005687770215 
+            text = "197885_french_patte" 
+        intervals [5]:
+            xmin = 2.1894005687770215 
+            xmax = 3.730922291486234 
+            text = "" 
+        intervals [6]:
+            xmin = 3.730922291486234 
+            xmax = 3.74748418061912 
+            text = "197885_french_peche" 
+        intervals [7]:
+            xmin = 3.74748418061912 
+            xmax = 5.294241801539867 
+            text = "" 
+        intervals [8]:
+            xmin = 5.294241801539867 
+            xmax = 5.349159497746793 
+            text = "197885_french_pile" 
+        intervals [9]:
+            xmin = 5.349159497746793 
+            xmax = 6.577471016663251 
+            text = "" 
+        intervals [10]:
+            xmin = 6.577471016663251 
+            xmax = 6.593930039686272 
+            text = "197885_french_pile" 
+        intervals [11]:
+            xmin = 6.593930039686272 
+            xmax = 8.017112252171128 
+            text = "" 
+        intervals [12]:
+            xmin = 8.017112252171128 
+            xmax = 8.026258949641393 
+            text = "197885_french_pipe" 
+        intervals [13]:
+            xmin = 8.026258949641393 
+            xmax = 9.662665580574814 
+            text = "" 
+        intervals [14]:
+            xmin = 9.662665580574814 
+            xmax = 9.68324482957922 
+            text = "197885_french_poche" 
+        intervals [15]:
+            xmin = 9.68324482957922 
+            xmax = 11.290851543113702 
+            text = "" 
+        intervals [16]:
+            xmin = 11.290851543113702 
+            xmax = 11.357236819130296 
+            text = "197885_french_pomme" 
+        intervals [17]:
+            xmin = 11.357236819130296 
+            xmax = 13.356912834350844 
+            text = "" 
+        intervals [18]:
+            xmin = 13.356912834350844 
+            xmax = 13.396290961669953 
+            text = "197885_french_pour" 
+        intervals [19]:
+            xmin = 13.396290961669953 
+            xmax = 14.87724319827299 
+            text = "" 
+        intervals [20]:
+            xmin = 14.87724319827299 
+            xmax = 14.949452490266637 
+            text = "197885_french_poudre" 
+        intervals [21]:
+            xmin = 14.949452490266637 
+            xmax = 16.442385509367515 
+            text = "" 
+        intervals [22]:
+            xmin = 16.442385509367515 
+            xmax = 16.495463597481724 
+            text = "197885_english_parrot" 
+        intervals [23]:
+            xmin = 16.495463597481724 
+            xmax = 18.37837819136157 
+            text = "" 
+        intervals [24]:
+            xmin = 18.37837819136157 
+            xmax = 18.39573853392968 
+            text = "197885_english_penny" 
+        intervals [25]:
+            xmin = 18.39573853392968 
+            xmax = 23.836284294424377 
+            text = "" 
+        intervals [26]:
+            xmin = 23.836284294424377 
+            xmax = 23.853471708153393 
+            text = "197885_english_pepper" 
+        intervals [27]:
+            xmin = 23.853471708153393 
+            xmax = 26.101819059860233 
+            text = "" 
+        intervals [28]:
+            xmin = 26.101819059860233 
+            xmax = 26.121532344725594 
+            text = "197885_english_pillow" 
+        intervals [29]:
+            xmin = 26.121532344725594 
+            xmax = 28.136551315293072 
+            text = "" 
+        intervals [30]:
+            xmin = 28.136551315293072 
+            xmax = 28.152120161968035 
+            text = "197885_english_pity" 
+        intervals [31]:
+            xmin = 28.152120161968035 
+            xmax = 32.05260412718958 
+            text = "" 
+        intervals [32]:
+            xmin = 32.05260412718958 
+            xmax = 32.07573374100749 
+            text = "197885_english_polish" 
+        intervals [33]:
+            xmin = 32.07573374100749 
+            xmax = 34.67075425414897 
+            text = "" 
+        intervals [34]:
+            xmin = 34.67075425414897 
+            xmax = 34.69918310046525 
+            text = "197885_english_poodle" 
+        intervals [35]:
+            xmin = 34.69918310046525 
+            xmax = 36.34698562744793 
+            text = "" 
+        intervals [36]:
+            xmin = 36.34698562744793 
+            xmax = 36.44055229005112 
+            text = "197885_english_pool" 
+        intervals [37]:
+            xmin = 36.44055229005112 
+            xmax = 38.18925568920679 
+            text = "" 
+        intervals [38]:
+            xmin = 38.18925568920679 
+            xmax = 38.20948964055217 
+            text = "197885_english_puppy" 
+        intervals [39]:
+            xmin = 38.20948964055217 
+            xmax = 39.88541992689284 
+            text = "" 
+        intervals [40]:
+            xmin = 39.88541992689284 
+            xmax = 39.89538327947512 
+            text = "197885_spanish_pato" 
+        intervals [41]:
+            xmin = 39.89538327947512 
+            xmax = 41.41633132556102 
+            text = "" 
+        intervals [42]:
+            xmin = 41.41633132556102 
+            xmax = 41.44014028541898 
+            text = "197885_spanish_pelo" 
+        intervals [43]:
+            xmin = 41.44014028541898 
+            xmax = 42.96752224535092 
+            text = "" 
+        intervals [44]:
+            xmin = 42.96752224535092 
+            xmax = 42.98693094037088 
+            text = "197885_spanish_pena" 
+        intervals [45]:
+            xmin = 42.98693094037088 
+            xmax = 44.8360846945911 
+            text = "" 
+        intervals [46]:
+            xmin = 44.8360846945911 
+            xmax = 44.8464848732561 
+            text = "197885_spanish_pina" 
+        intervals [47]:
+            xmin = 44.8464848732561 
+            xmax = 46.536270195717464 
+            text = "" 
+        intervals [48]:
+            xmin = 46.536270195717464 
+            xmax = 46.54639799980178 
+            text = "197885_spanish_piso" 
+        intervals [49]:
+            xmin = 46.54639799980178 
+            xmax = 48.08207084075574 
+            text = "" 
+        intervals [50]:
+            xmin = 48.08207084075574 
+            xmax = 48.092702371277234 
+            text = "197885_spanish_poco" 
+        intervals [51]:
+            xmin = 48.092702371277234 
+            xmax = 49.6888867968593 
+            text = "" 
+        intervals [52]:
+            xmin = 49.6888867968593 
+            xmax = 49.699235605038865 
+            text = "197885_spanish_pollo" 
+        intervals [53]:
+            xmin = 49.699235605038865 
+            xmax = 51.47311010982543 
+            text = "" 
+        intervals [54]:
+            xmin = 51.47311010982543 
+            xmax = 51.501854139106605 
+            text = "197885_spanish_puro" 
+        intervals [55]:
+            xmin = 51.501854139106605 
+            xmax = 52.16154195011338 
+            text = "" 

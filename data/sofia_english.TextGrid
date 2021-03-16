@@ -1,0 +1,98 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 25.645791666666668 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "vot" 
+        xmin = 0 
+        xmax = 25.645791666666668 
+        intervals: size = 21 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9680299287119675 
+            text = "" 
+        intervals [2]:
+            xmin = 0.9680299287119675 
+            xmax = 1.0111966397456142 
+            text = "vot" 
+        intervals [3]:
+            xmin = 1.0111966397456142 
+            xmax = 4.003621337599215 
+            text = "" 
+        intervals [4]:
+            xmin = 4.003621337599215 
+            xmax = 4.023428505204336 
+            text = "vot" 
+        intervals [5]:
+            xmin = 4.023428505204336 
+            xmax = 6.068862738968927 
+            text = "" 
+        intervals [6]:
+            xmin = 6.068862738968927 
+            xmax = 6.087382929603301 
+            text = "vot" 
+        intervals [7]:
+            xmin = 6.087382929603301 
+            xmax = 8.777340403199263 
+            text = "" 
+        intervals [8]:
+            xmin = 8.777340403199263 
+            xmax = 8.84557092049218 
+            text = "vot" 
+        intervals [9]:
+            xmin = 8.84557092049218 
+            xmax = 10.86956704677548 
+            text = "" 
+        intervals [10]:
+            xmin = 10.86956704677548 
+            xmax = 10.905951631659835 
+            text = "vot" 
+        intervals [11]:
+            xmin = 10.905951631659835 
+            xmax = 13.154391003262226 
+            text = "" 
+        intervals [12]:
+            xmin = 13.154391003262226 
+            xmax = 13.227486973530553 
+            text = "vot" 
+        intervals [13]:
+            xmin = 13.227486973530553 
+            xmax = 15.516104923498839 
+            text = "" 
+        intervals [14]:
+            xmin = 15.516104923498839 
+            xmax = 15.593977288783657 
+            text = "vot" 
+        intervals [15]:
+            xmin = 15.593977288783657 
+            xmax = 18.94146891033636 
+            text = "" 
+        intervals [16]:
+            xmin = 18.94146891033636 
+            xmax = 18.985944407683828 
+            text = "vot" 
+        intervals [17]:
+            xmin = 18.985944407683828 
+            xmax = 20.8711042780031 
+            text = "" 
+        intervals [18]:
+            xmin = 20.8711042780031 
+            xmax = 20.989030312073613 
+            text = "pool" 
+        intervals [19]:
+            xmin = 20.989030312073613 
+            xmax = 24.208958172098026 
+            text = "" 
+        intervals [20]:
+            xmin = 24.208958172098026 
+            xmax = 24.24507553129982 
+            text = "vot" 
+        intervals [21]:
+            xmin = 24.24507553129982 
+            xmax = 25.645791666666668 
+            text = "" 

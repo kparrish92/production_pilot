@@ -1,0 +1,134 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 47.01141666666667 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "word" 
+        xmin = 0 
+        xmax = 47.01141666666667 
+        intervals: size = 9 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.41623385340991176 
+            text = "" 
+        intervals [2]:
+            xmin = 0.41623385340991176 
+            xmax = 0.7649380658392648 
+            text = "pas" 
+        intervals [3]:
+            xmin = 0.7649380658392648 
+            xmax = 2.0510531564863936 
+            text = "" 
+        intervals [4]:
+            xmin = 2.0510531564863936 
+            xmax = 2.584123665162178 
+            text = "patte" 
+        intervals [5]:
+            xmin = 2.584123665162178 
+            xmax = 3.7443818664782293 
+            text = "" 
+        intervals [6]:
+            xmin = 3.7443818664782293 
+            xmax = 4.173020486472267 
+            text = "peche" 
+        intervals [7]:
+            xmin = 4.173020486472267 
+            xmax = 5.331660007837143 
+            text = "" 
+        intervals [8]:
+            xmin = 5.331660007837143 
+            xmax = 5.90989426316931 
+            text = "pere" 
+        intervals [9]:
+            xmin = 5.90989426316931 
+            xmax = 47.01141666666667 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "language" 
+        xmin = 0 
+        xmax = 47.01141666666667 
+        intervals: size = 9 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.4161956808339963 
+            text = "" 
+        intervals [2]:
+            xmin = 0.4161956808339963 
+            xmax = 0.7649380658392648 
+            text = "french" 
+        intervals [3]:
+            xmin = 0.7649380658392648 
+            xmax = 2.0510531564863936 
+            text = "" 
+        intervals [4]:
+            xmin = 2.0510531564863936 
+            xmax = 2.5719323785292216 
+            text = "french" 
+        intervals [5]:
+            xmin = 2.5719323785292216 
+            xmax = 3.7443818664782293 
+            text = "" 
+        intervals [6]:
+            xmin = 3.7443818664782293 
+            xmax = 4.173020486472267 
+            text = "french" 
+        intervals [7]:
+            xmin = 4.173020486472267 
+            xmax = 5.331740521325022 
+            text = "" 
+        intervals [8]:
+            xmin = 5.331740521325022 
+            xmax = 5.90989426316931 
+            text = "french" 
+        intervals [9]:
+            xmin = 5.90989426316931 
+            xmax = 47.01141666666667 
+            text = "" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "vot" 
+        xmin = 0 
+        xmax = 47.01141666666667 
+        intervals: size = 9 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.4161575082580808 
+            text = "" 
+        intervals [2]:
+            xmin = 0.4161575082580808 
+            xmax = 0.4258151699646949 
+            text = "197874" 
+        intervals [3]:
+            xmin = 0.4258151699646949 
+            xmax = 2.050968639675778 
+            text = "" 
+        intervals [4]:
+            xmin = 2.050968639675778 
+            xmax = 2.0671113505033745 
+            text = "197874" 
+        intervals [5]:
+            xmin = 2.0671113505033745 
+            xmax = 3.7444255692954855 
+            text = "" 
+        intervals [6]:
+            xmin = 3.7444255692954855 
+            xmax = 3.7536008927983593 
+            text = "197874" 
+        intervals [7]:
+            xmin = 3.7536008927983593 
+            xmax = 5.331660007837143 
+            text = "" 
+        intervals [8]:
+            xmin = 5.331660007837143 
+            xmax = 5.342408558469001 
+            text = "vot" 
+        intervals [9]:
+            xmin = 5.342408558469001 
+            xmax = 47.01141666666667 
+            text = "" 

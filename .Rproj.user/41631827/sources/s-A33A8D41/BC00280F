@@ -1,0 +1,32 @@
+{
+    "id": "BC00280F",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1615837809743.0,
+    "source_on_save": false,
+    "relative_order": 12,
+    "properties": {
+        "expression": "eng_syl",
+        "caption": "eng_syl",
+        "totalObservations": 24,
+        "displayedObservations": 24,
+        "variables": 3,
+        "cacheKey": "F4BFF183",
+        "object": "eng_syl",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=eng_syl&cache_key=F4BFF183&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2473908740296,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1615837809743,
+    "read_only": false,
+    "read_only_alternatives": []
+}
