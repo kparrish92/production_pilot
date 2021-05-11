@@ -1,3 +1,5 @@
+# Libraries 
+
 library(here)
 library(fs)
 library(data.table)
@@ -5,7 +7,11 @@ library(dplyr)
 library(tidyverse)
 library(equivalence)
 library(dplyr)
+library(lme4)
+library(lmerTest)
+library(sjPlot)
 
+# Import Spanish L1 data 
 list_of_files <- list.files(path = "raw_data/se_wav_files/tables", recursive = TRUE,
                            pattern = "\\.Table$", 
       
@@ -13,14 +19,64 @@ list_of_files <- list.files(path = "raw_data/se_wav_files/tables", recursive = T
 all_se <- rbindlist(sapply(list_of_files, fread, simplify = FALSE),
                 use.names = TRUE, idcol = "FileName") 
 
+# Tidy data 
 all_se = all_se %>% 
   mutate(vot = tmax - tmin) %>% 
   separate(text, into = c("participant", "language", "word"), sep = "_") %>%
   group_by(participant, language) %>% 
   mutate(mean = mean(vot), sd = sd(vot)) 
 
+# GLMM for span_model
+span_model = lmer(vot ~ language + (1 + language | participant), data = all_se)
 
-## Language categories by participant: box plot
+# intercept for participant, slope for language 
+
+summary(span_model)
+
+tab_model(span_model)
+
+
+# TOST Spanish 
+
+# Put the data in wide format 
+all_se_wide_e = all_se %>% 
+  dplyr::select(language, participant, vot, word) %>% 
+  filter(language == "english")
+  pivot_wider(names_from = language, values_from = vot)
+  
+  
+all_se_wide_s = all_se %>% 
+    dplyr::select(language, participant, vot, word) %>% 
+    filter(language == "spanish")
+  pivot_wider(names_from = language, values_from = vot)
+  
+  
+all_se_wide_f = all_se %>% 
+    dplyr::select(language, participant, vot, word) %>% 
+    filter(language == "french")
+  pivot_wider(names_from = language, values_from = vot)
+  
+
+mean_french_sl1 = mean(all_se_wide_f$vot)
+sd_french_sl1 = sd(all_se_wide_f$vot)
+
+
+mean_spanish_sl1 = mean(all_se_wide_s$vot)
+
+mean_english_sl1 = mean(all_se_wide_e$vot)
+  
+
+tost_L2_L2_SL1 = TOSTtwo(m1 = mean(q0_stops_eh$l3), m2 = mean(q0_stops_ef$l3), 
+                       sd1 = sd(q0_stops_eh$l3), sd2 = sd(q0_stops_ef$l3), 
+                       n1 = 14, n2 = 9, 
+                       low_eqbound_d = -.5, 
+                       high_eqbound_d = .5, 
+                       alpha = 0.05,
+                       var.equal = FALSE)
+
+
+
+# Language categories by participant: box plot
 
 all_se %>% 
   ggplot(., aes(x = language, y = vot, color = participant)) + geom_boxplot()
